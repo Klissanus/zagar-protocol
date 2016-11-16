@@ -1,4 +1,4 @@
-package protocol;
+package protocol.commands;
 
 import org.jetbrains.annotations.NotNull;
 import protocol.model.Cell;
