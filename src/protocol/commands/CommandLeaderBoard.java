@@ -1,5 +1,6 @@
 package protocol.commands;
 
+import com.google.gson.annotations.Expose;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -10,6 +11,7 @@ public final class CommandLeaderBoard extends Command {
   public static final String NAME = "leader_board";
 
   @NotNull
+  @Expose
   private final String[] leaderBoard;
 
   public CommandLeaderBoard(@NotNull String[] leaderBoard) {

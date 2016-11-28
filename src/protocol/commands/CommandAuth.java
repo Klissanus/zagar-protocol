@@ -1,5 +1,6 @@
 package protocol.commands;
 
+import com.google.gson.annotations.Expose;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -9,8 +10,10 @@ public final class CommandAuth extends Command {
   @NotNull
   public static final String NAME = "auth";
   @NotNull
+  @Expose
   private final String token;
   @NotNull
+  @Expose
   private final String login;
 
   public CommandAuth(@NotNull String login, @NotNull String token) {

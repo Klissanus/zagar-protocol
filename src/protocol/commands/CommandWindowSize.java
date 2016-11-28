@@ -1,5 +1,6 @@
 package protocol.commands;
 
+import com.google.gson.annotations.Expose;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -10,7 +11,9 @@ import org.jetbrains.annotations.NotNull;
 public final class CommandWindowSize extends Command {
     @NotNull
     public static final String NAME = "windowsize";
+    @Expose
     private int width;
+    @Expose
     private int height;
 
     public CommandWindowSize(int width, int height) {

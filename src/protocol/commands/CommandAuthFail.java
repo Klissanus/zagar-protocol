@@ -1,5 +1,6 @@
 package protocol.commands;
 
+import com.google.gson.annotations.Expose;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -10,6 +11,7 @@ public final class CommandAuthFail extends Command {
   public static final String NAME = "auth_fail";
 
   @NotNull
+  @Expose
   private final String cause;
 
   public CommandAuthFail(@NotNull String login, @NotNull String token, @NotNull String cause) {

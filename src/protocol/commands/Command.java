@@ -1,5 +1,6 @@
 package protocol.commands;
 
+import com.google.gson.annotations.Expose;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -7,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public abstract class Command {
   @NotNull
+  @Expose
   private final String command;
 
   protected Command(@NotNull String name) {
