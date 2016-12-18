@@ -13,6 +13,11 @@ public final class PlayerCell extends Cell {
     @Expose
     private final int playerId;
 
+    protected PlayerCell() {
+        cellId=0;
+        playerId=0;
+    }
+
     public PlayerCell(int cellId, float size, Point2D coordinate, int playerId) {
         super(size, coordinate);
         this.playerId = playerId;
