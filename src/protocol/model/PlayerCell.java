@@ -11,21 +11,21 @@ public final class PlayerCell extends Cell {
     @Expose
     private final int cellId;
     @Expose
-    private final int playerId;
+    private final String playerName;
 
     protected PlayerCell() {
         cellId=0;
-        playerId=0;
+        playerName="";
     }
 
-    public PlayerCell(int cellId, float size, Point2D coordinate, int playerId) {
+    public PlayerCell(int cellId, float size, Point2D coordinate, String playerName) {
         super(size, coordinate);
-        this.playerId = playerId;
+        this.playerName=playerName;
         this.cellId = cellId;
     }
 
-    public int getPlayerId() {
-        return playerId;
+    public String getPlayerName() {
+        return playerName;
     }
 
     public int getCellId() {
