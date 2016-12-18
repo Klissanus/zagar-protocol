@@ -9,14 +9,21 @@ import java.awt.geom.Point2D;
  */
 public final class PlayerCell extends Cell {
     @Expose
-    private int playerId;
+    private final int cellId;
+    @Expose
+    private final int playerId;
 
     public PlayerCell(int cellId, float size, Point2D coordinate, int playerId) {
-        super(cellId, size, coordinate);
+        super(size, coordinate);
         this.playerId = playerId;
+        this.cellId = cellId;
     }
 
     public int getPlayerId() {
         return playerId;
+    }
+
+    public int getCellId() {
+        return cellId;
     }
 }

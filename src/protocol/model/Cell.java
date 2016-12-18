@@ -9,23 +9,16 @@ import java.awt.geom.Point2D;
  */
 public abstract class Cell {
   @Expose
-  private final int cellId;
-  @Expose
   private final float size;
   @Expose
-  private Point2D coordinate;
+  private final Point2D coordinate;
 
-  public Cell(int cellId, float size, Point2D coordinate) {
-    this.cellId = cellId;
+  public Cell(float size, Point2D coordinate) {
     this.size = size;
     this.coordinate = coordinate;
   }
 
   public Point2D getCoordinate() {return coordinate;}
-
-  public int getCellId() {
-    return cellId;
-  }
 
   public float getSize() {
     return size;
