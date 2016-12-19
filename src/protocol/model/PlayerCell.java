@@ -14,13 +14,13 @@ public final class PlayerCell extends Cell {
     private final String playerName;
 
     protected PlayerCell() {
-        cellId=0;
-        playerName="";
+        cellId = 0;
+        playerName = "";
     }
 
     public PlayerCell(int cellId, float mass, Point2D coordinate, String playerName) {
         super(mass, coordinate);
-        this.playerName=playerName;
+        this.playerName = playerName;
         this.cellId = cellId;
     }
 

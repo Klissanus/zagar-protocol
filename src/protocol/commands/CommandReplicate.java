@@ -10,18 +10,18 @@ import java.util.List;
  * @author apomosov
  */
 public final class CommandReplicate extends Command {
-  @NotNull
-  public static final String NAME = "cells";
-  @Expose
-  private final List<Cell> cells;
+    @NotNull
+    public static final String NAME = "cells";
+    @Expose
+    private final List<Cell> cells;
 
-  public CommandReplicate(@NotNull List<Cell> cells) {
-    super(NAME);
-    this.cells = cells;
-  }
+    public CommandReplicate(@NotNull List<Cell> cells) {
+        super(NAME);
+        this.cells = cells;
+    }
 
-  @NotNull
-  public List<Cell> getCells() {
-    return cells;
-  }
+    @NotNull
+    public List<Cell> getCells() {
+        return cells;
+    }
 }

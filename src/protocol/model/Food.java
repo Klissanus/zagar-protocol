@@ -5,9 +5,11 @@ import java.awt.geom.Point2D;
 /**
  * @author apomosov
  */
-public final class Food extends Cell{
-  protected Food() {}
-  public Food(double mass, Point2D coordinate) {
-    super(mass, coordinate);
-  }
+public final class Food extends Cell {
+    protected Food() {
+    }
+
+    public Food(double mass, Point2D coordinate) {
+        super(mass, coordinate);
+    }
 }
