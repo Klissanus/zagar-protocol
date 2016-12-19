@@ -7,7 +7,7 @@ import java.awt.geom.Point2D;
  */
 public final class Food extends Cell{
   protected Food() {}
-  public Food(float size, Point2D coordinate) {
-    super(size, coordinate);
+  public Food(double mass, Point2D coordinate) {
+    super(mass, coordinate);
   }
 }

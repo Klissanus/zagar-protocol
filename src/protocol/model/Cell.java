@@ -9,25 +9,25 @@ import java.awt.geom.Point2D;
  */
 public abstract class Cell {
   @Expose
-  private final float size;
+  private final double mass;
   @Expose
   private final double x,y;
 
   protected Cell() {
-    size=0;
+    mass=0;
     x=0;
     y=0;
   }
 
-  public Cell(float size, Point2D coordinate) {
-    this.size = size;
+  public Cell(double mass, Point2D coordinate) {
+    this.mass = mass;
     this.x=coordinate.getX();
     this.y=coordinate.getY();
   }
 
   public Point2D getCoordinate() {return new Point2D.Double(x,y);}
 
-  public float getSize() {
-    return size;
+  public double getMass() {
+    return mass;
   }
 }

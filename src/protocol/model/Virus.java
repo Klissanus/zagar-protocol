@@ -7,7 +7,7 @@ import java.awt.geom.Point2D;
  */
 public final class Virus extends Cell {
     protected Virus() {}
-    public Virus(float size, Point2D coordinate) {
-        super(size, coordinate);
+    public Virus(double mass, Point2D coordinate) {
+        super(mass, coordinate);
     }
 }
