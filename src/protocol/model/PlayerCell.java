@@ -18,8 +18,8 @@ public final class PlayerCell extends Cell {
         playerName = "";
     }
 
-    public PlayerCell(int cellId, float mass, Point2D coordinate, String playerName) {
-        super(mass, coordinate);
+    public PlayerCell(int cellId, float mass, Point2D coordinate, double radius, String playerName) {
+        super(mass, coordinate, radius);
         this.playerName = playerName;
         this.cellId = cellId;
     }

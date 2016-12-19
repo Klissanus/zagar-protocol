@@ -9,7 +9,7 @@ public final class Virus extends Cell {
     protected Virus() {
     }
 
-    public Virus(double mass, Point2D coordinate) {
-        super(mass, coordinate);
+    public Virus(double mass, Point2D coordinate, double radius) {
+        super(mass, coordinate, radius);
     }
 }

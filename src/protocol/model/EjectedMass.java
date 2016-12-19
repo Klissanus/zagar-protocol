@@ -9,7 +9,7 @@ public final class EjectedMass extends Cell {
     protected EjectedMass() {
     }
 
-    public EjectedMass(double mass, Point2D coordinate) {
-        super(mass, coordinate);
+    public EjectedMass(double mass, Point2D coordinate, double radius) {
+        super(mass, coordinate, radius);
     }
 }
