@@ -11,6 +11,8 @@ public abstract class Cell {
   @Expose
   private final double mass;
   @Expose
+  private final double radius;
+  @Expose
   private final double x,y;
 
   protected Cell() {
@@ -19,15 +21,20 @@ public abstract class Cell {
     y=0;
   }
 
-  public Cell(double mass, Point2D coordinate) {
+  public Cell(double mass, Point2D coordinate, double radius) {
     this.mass = mass;
     this.x=coordinate.getX();
     this.y=coordinate.getY();
+    this.radius=radius;
   }
 
   public Point2D getCoordinate() {return new Point2D.Double(x,y);}
 
   public double getMass() {
     return mass;
+  }
+
+  public double getRadius() {
+    return radius;
   }
 }
